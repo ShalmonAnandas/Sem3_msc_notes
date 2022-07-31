@@ -3,11 +3,18 @@
 $seq = <stdin>;
 $count_a = 0;
 
-for($i=0; $i<=$#seq; $i++){
-    print(@seq[$i]);
-    if($seq[$i]){
-        $count_a++;
-    }
+print($seq);
+
+print(length($seq));
+
+$nth = substr($seq, n-1, 1);
+
+print($nth);
+
+for($i=0; $i<=length($seq); $i++){
+    print($seq[$i]);
+    # if($seq[$i] eq "a"){
+    #     $count_a = $count_a+1;
+    # }
 }
 
-print($count_a);

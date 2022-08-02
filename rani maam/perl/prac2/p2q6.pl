@@ -6,4 +6,6 @@ $ans = 1;
 for($i=$number;$i>=1;$i--){
 	$ans = $i*$ans;
 }
-print("Factorial of $number is $ans\n");
+
+print("Factorial is $ans\n");
+

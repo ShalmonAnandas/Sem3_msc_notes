@@ -1,6 +1,7 @@
 # Write a Perl script to display name age and salary by name employee using formatting
 
 format EMPLOYEE = 
+===============================
 @<<<<<<<<<<<@<<<<<<<<<<<@<<<<<<<<<
 $name,$age,$salary
 ===============================

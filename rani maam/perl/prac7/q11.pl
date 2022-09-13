@@ -2,7 +2,7 @@
 
 $seq = <stdin>;
 
-if($seq =~ m/t/ && $seq =~ m/u/){
+if($seq =~ m/t/ || $seq =~ m/u/){
     print("True");
 }else{
     print("False");

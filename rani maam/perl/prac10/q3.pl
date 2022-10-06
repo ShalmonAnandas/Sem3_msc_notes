@@ -1,6 +1,6 @@
 use DBI;
 
-$dbh = DBI->connect("DBI:mysql:College", "root", "123") or die $DBI::errstr;
+$dbh = DBI->connect("DBI:mysql:College", "root", "root") or die $DBI::errstr;
 print("Database connected\n");
 
 $sth = $dbh->prepare("insert into STUDENT(NAME, ROLLNO, SUBJECT) values ('Shalmon', '24', 'Bioinformatics')");

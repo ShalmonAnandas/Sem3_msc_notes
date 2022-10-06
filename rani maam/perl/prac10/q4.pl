@@ -1,6 +1,6 @@
 use DBI;
 
-$dbh = DBI->connect("DBI:mysql:OFFICE", "root", "123") or die $DBI::errstr;
+$dbh = DBI->connect("DBI:mysql:OFFICE", "root", "root") or die $DBI::errstr;
 print("Database connected\n");
 
 $sth = $dbh->prepare("select * from EMPLOYEE");
@@ -16,4 +16,4 @@ Salary      : $salary
 \n");
 }
 
-$sth->finish();--
+$sth->finish();

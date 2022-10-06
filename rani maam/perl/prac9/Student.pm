@@ -13,6 +13,6 @@ sub display{
 	$name_of_stu = $ref -> {name};
 	$roll_of_stu = $ref -> {roll};
 	print("Name: $name_of_stu\n");
-	print("Roll number: $roll_of_stu\");
+	print("Roll number: $roll_of_stu\n");
 }
 1;

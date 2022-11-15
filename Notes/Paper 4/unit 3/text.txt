@@ -1,0 +1,27 @@
+Q6) write a short note on
+
+	1.	Inheritance:
+
+Inheritance: Inheritance is an important pillar of OOP(Object Oriented Programming). It is the mechanism in perl by which one class is allowed to inherit the features(fields and methods) of another class. Important terminology:
+	•	Super Class: The class whose features are inherited is known as superclass(or a base class or a parent class).
+	•	Sub Class: The class that inherits the other class is known as subclass(or a derived class, extended class, or child class). The subclass can add its own fields and methods in addition to the superclass fields and methods.
+	•	Reusability: Inheritance supports the concept of “reusability”, i.e. when we want to create a new class and there is already a class that includes some of the code that we want, we can derive our new class from the existing class. By doing this, we are reusing the fields and methods of the existing class.
+A class can be created in perl by using packages and can be inherited by using the ‘use’ keyword.
+
+
+
+
+	2.	Bioperl:
+
+
+￼
+
+
+BioPerl is a collection of Perl modules that facilitate the development of Perl scripts for bioinformatics applications. It has played an integral role in the Human Genome Project.
+
+Bioperl provides access to data stores such as GenBank and SwissProt via a flexible series of sequence input/output modules, and to the emerging common sequence data storage format of the Open Bioinformatics Database Access project.
+
+Perl in bioinformatics 
+Perl makes it easy to process and manipulate long sequences such as DNA and proteins. Perl makes it convenient to write a program that controls one or more other programs. As a final example, Perl is used to put biology research labs, and their results, on their own dynamic web sites.
+
+

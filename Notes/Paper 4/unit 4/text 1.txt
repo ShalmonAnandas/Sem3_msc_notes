@@ -1,0 +1,27 @@
+Q1) Difference between SQL and Mongo DB
+
+
+￼
+
+
+
+What are MongoDB and MySQL?
+
+MongoDB	MySQL
+MongoDB is an open-source database developed by MongoDB, Inc. MongoDB stores data in JSON-like documents that can vary in structure. It is a popular NoSQL database.	MySQL is a popular open-source relational database management system (RDBMS) that is developed, distributed and supported by Oracle Corporation.
+How Data is Stored?
+MongoDB	MySQL
+In MongoDB, each individual records are stored as ‘documents’.	In MySQL, each individual records are stored as ‘rows’ in a table.
+HIERARCHICAL UPPER OF A RECORD
+
+MongoDB	MySQL
+Documents belonging to a particular class or group as
+stored in a ‘collection’.
+Example: collection of users.	A ‘table’ is used to store rows (records) of similar type.
+SQL or NoSQL
+MongoDB	MySQL
+MongoDB is what is called a NoSQL database. This means that pre-defined structure for the incoming data can be defined and adhered to but also, if required different documents in a collection can have different structures. It has a dynamic schema.	MySQL as the name suggests uses Structured Query Language (SQL) for database access. The schema can not be changed. The inputs following the given schema are only entered.
+Example: In a table, if there are columns for name, address and there is need to enter ‘age’ in new column in one of the entries, it will not take it as the column is not defined in schema. This can be achieved in MongoDB, any new field can be inserted irrespective of the schema and is thus known to have dynamic schema.
+SALIENT FEATURES
+MongoDB	MySQL
+MongoDB was designed with high availability and scalability in mind, and includes out-of-the-box replication and sharding.	MySQL concept does not allow efficient replication and sharding but in MySQL one can access associated data using joins which minimizes duplication

@@ -1,0 +1,36 @@
+Q4) Difference between single and doubles quotes in perl
+
+Single Quote Strings
+In Perl, when a string has single quote, it means everything is treated as a literal mere text. Even if it is the name of a variable.
+Example:
+
+# Single Quote Strings
+
+$x = 5;
+$my_name = 'Include help $x';
+
+print $my_name;
+
+Output:
+Include help $x
+
+
+As you can see from the example above, the variable name $x has been displayed just by its name $x.
+
+
+Double Quote Strings
+Run the above example with double quotes and see the output.
+Example:
+
+# Double Quote Strings
+
+$x = 5;
+$my_name = "Include help $x";
+
+print $my_name;
+
+Output:
+Include help 5
+
+
+The difference between single and double-quotes is that double quotes insert variables and special characters such as newlines \n, whereas a single quote does not insert any variable or special character.

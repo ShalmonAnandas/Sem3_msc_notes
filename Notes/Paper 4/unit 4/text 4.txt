@@ -1,0 +1,21 @@
+Q4) Features of Mongo DB
+
+These are some important features of MongoDB:
+1. Support ad hoc queries
+In MongoDB, you can search by field, range query and it also supports regular expression searches.
+2. Indexing
+You can index any field in a document.
+3. Replication
+MongoDB supports Master Slave replication.
+A master can perform Reads and Writes and a Slave copies data from the master and can only be used for reads or back up (not writes)
+4. Duplication of data
+MongoDB can run over multiple servers. The data is duplicated to keep the system up and also keep its running condition in case of hardware failure.
+5. Load balancing
+It has an automatic load balancing configuration because of data placed in shards.
+
+
+	6.	Uses JavaScript instead of Procedures.
+	7.	It is a schema-less database written in C++.
+	8.	Provides high performance.
+	9.	Stores files of any size easily without complicating your stack.
+	10.	Easy to administer in the case of failures.

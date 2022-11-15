@@ -1,0 +1,33 @@
+Q5) advantages and disadvantages of Mongo DB
+
+Advantages of MongoDB over RDBMS
+	•	Schema less − MongoDB is a document database in which one collection holds different documents. Number of fields, content and size of the document can differ from one document to another.
+	•	Structure of a single object is clear.
+	•	No complex joins.
+	•	Deep query-ability. MongoDB supports dynamic queries on documents using a document-based query language that's nearly as powerful as SQL.
+	•	Tuning.
+	•	Ease of scale-out − MongoDB is easy to scale.
+	•	Conversion/mapping of application objects to database objects not needed.
+	•	Uses internal memory for storing the (windowed) working set, enabling faster access of data.
+Why Use MongoDB?
+	•	Document Oriented Storage − Data is stored in the form of JSON style documents.
+	•	Index on any attribute
+	•	Replication and high availability
+	•	Auto-Sharding
+	•	Rich queries
+	•	Fast in-place updates
+	•	Professional support by MongoDB
+Where to Use MongoDB?
+	•	Big Data
+	•	Content Management and Delivery
+	•	Mobile and Social Infrastructure
+	•	User Data Management
+	•	Data Hub
+
+
+
+Disadvantages
+
+	•			MongoDB uses high memory for data storage.
+	•			There is a limit for document size, i.e. 16mb.
+	•			There is no transaction support in MongoDB.

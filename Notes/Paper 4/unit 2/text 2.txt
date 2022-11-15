@@ -1,0 +1,60 @@
+Q2) Elaborate on types of regular expression operators.
+
+There are three regular expression operators within Perl.
+	•	Match Regular Expression - m//
+	•	Substitute Regular Expression - s///
+	•	Transliterate Regular Expression - tr///
+
+
+The forward slashes in each case act as delimiters for the regular expression (regex) that you are specifying. If you are comfortable with any other delimiter, then you can use in place of forward slash.
+
+
+	1.	The Match Operator
+The match operator, m//, is used to match a string or statement to a regular expression. For example, to match the character sequence "foo" against the scalar $bar, you might use a statement like this −
+
+Example:
+$bar = "This is foo and again foo";
+if ($bar =~ /foo/) {
+   print "First time is matching\n";
+} else {
+   print "First time is not matching\n";
+}
+
+Output:
+First time is matching
+
+
+	2.	The Substitution Operator
+The substitution operator, s///, is really just an extension of the match operator that allows you to replace the text matched with some new text. The basic form of the operator is −
+
+s/PATTERN/REPLACEMENT/;
+The PATTERN is the regular expression for the text that we are looking for. The REPLACEMENT is a specification for the text or regular expression that we want to use to replace the found text with. For example, we can replace all occurrences of dog with cat using the following regular expression −
+
+Example:
+
+$string = "The cat sat on the mat";
+$string =~ s/cat/dog/;
+
+print "$string\n";
+
+Output:
+
+The dog sat on the mat
+
+
+	3.	The Translation Operator
+Translation is similar, but not identical, to the principles of substitution, but unlike substitution, translation (or transliteration) does not use regular expressions for its search on replacement values. The translation operators are −
+tr/SEARCHLIST/REPLACEMENTLIST/cds
+y/SEARCHLIST/REPLACEMENTLIST/cds
+The translation replaces all occurrences of the characters in SEARCHLIST with the corresponding characters in REPLACEMENTLIST. For example, using the "The cat sat on the mat." string we have been using in this chapter −
+
+Example:
+
+$string = 'The cat sat on the mat';
+$string =~ tr/a/o/;
+
+print "$string\n";
+
+Output:
+
+The cot sot on the mot.

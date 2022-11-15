@@ -1,0 +1,37 @@
+Q6) elaborate on conditional statement in Perl
+
+Perl conditional statements helps in the decision making, which require that the programmer specifies one or more conditions to be evaluated or tested by the program, along with a statement or statements to be executed if the condition is determined to be true, and optionally, other statements to be executed if the condition is determined to be false.
+Following is the general from of a typical decision making structure found in most of the programming languages −
+￼
+The number 0, the strings '0' and "" , the empty list () , and undef are all false in a boolean context and all other values are true. Negation of a true value by ! or not returns a special false value.
+Perl programming language provides the following types of conditional statements.
+
+
+Sr.No.	Statement & Description
+1	if statement
+An if statement consists of a boolean expression followed by one or more statements.  Syntax
+The syntax of an if statement in Perl programming language is −
+
+if(boolean_expression) {
+   # statement(s) will execute if the given condition is true
+}.                                                            If the boolean expression evaluates to true then the block of code inside the if statement will be executed. If boolean expression evaluates to false then the first set of code after the end of the if statement (after the closing curly brace) will be executed.                             Example: $a = 10;
+# check the boolean condition using if statement
+if( $a < 20 ) {
+   # if condition is true then print the following
+   printf "a is less than 20\n";
+}
+print "value of a is : $a\n";             
+2	if...else statement
+An if statement can be followed by an optional else statement.       
+3	if...elsif...else statement
+An if statement can be followed by an optional elsif statement and then by an optional else statement.
+4	unless statement
+An unless statement consists of a boolean expression followed by one or more statements.
+5	unless...else statement
+An unless statement can be followed by an optional else statement.
+6	unless...elsif..else statement
+An unless statement can be followed by an optional elsif statement and then by an optional else statement.
+7	switch statement
+With the latest versions of Perl, you can make use of the switch statement. which allows a simple way of comparing a variable value against various conditions
+
+

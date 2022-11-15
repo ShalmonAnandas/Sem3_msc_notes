@@ -1,0 +1,25 @@
+Q4) elaborate on minus D. And globe function.
+
+Perl functions and subroutines are used to reuse a code in a program. You can use a function at several places in your application with different parameters.
+There is only one difference in function and subroutine, subroutine is created with sub keyword and it returns a value. You can divide your code into separate subroutines. Logically each function in each division should perform a specific task.
+
+
+glob() function in Perl is used to print the files present in a directory passed to it as an argument. This function can print all or the specific files whose extension has been passed to it.
+
+Syntax: glob(Directory_name/File_type);
+Parameter: path of the directory of which files are to be printed.
+Returns: the list of files present in the given directory.
+
+
+Example 1: Printing names of all the files in the directory
+#!/usr/bin/perl 
+  
+# To store the files 
+# from the directory in the array 
+@files = glob('C:/Users/GeeksForGeeks/Folder/*'); 
+
+  
+# Printing the created array 
+print "@files\n"
+
+Above example will print all the files of the requested directory.

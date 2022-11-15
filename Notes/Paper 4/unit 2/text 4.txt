@@ -1,0 +1,14 @@
+Q4) what is meta characters? List down Meta characters used in perl and explain any seven. With example.
+
+Metacharacters
+
+A metacharacter is a character that has a special meaning during pattern processing. You use metacharacters in regular expressions to define the search criteria and any text manipulations.
+
+Metacharacters	Description	Example
+^	This character is used to match an expression to its right at the start of a string.	^a is an expression match to the string which starts with 'a' such as "aab", "a9c", "apr", "aaaaab", etc.
+$	The $sign is used to match an expression to its left at the end of a string.	r$ is an expression match to a string which ends with r such as "aaabr", "ar", "r", "aannn9r", etc.
+.	This character is used to match any single character in a string except the line terminator, i.e. /n.	b.x is an expression that match strings such as "bax", "b9x", "bar".
+|	It is used to match a particular character or a group of characters on either side. If the character on the left side is matched, then the right side's character is ignored.	A|b is an expression which gives various strings, but each string contains either a or b.
+\	It is used to escape a special character after this sign in a string.	
+A	It is used to match the character 'A' in the string.	This expression matches those strings in which at least one-time A is present. Such strings are "Amcx", "mnAr", "mnopAx4".
+Ab	It is used to match the substring 'ab' in the string.	This expression matches those strings in which 'Ab' is present at least one time. Such strings are "Abcx", "mnAb", "mnopAbx4"

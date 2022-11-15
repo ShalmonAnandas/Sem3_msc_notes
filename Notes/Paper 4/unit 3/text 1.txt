@@ -1,0 +1,35 @@
+Q1) what is package, explain with syntax how to create and use perl package with example.
+
+
+A package is a collection or code group in Perl. Meanwhile, a module in Perl is a package defined in a file with the name “package” and the the extension .pm.
+
+We can only define the package once in a program; whereas, more than one different module can have the same name in a single code file.
+
+A package name must always be at the start of a Perl program.
+
+Perl provides a mechanism to protect different sections of code from inadvertently tampering with each other's variables. In fact, apart from certain magical variables, there's really no such thing as a global variable in Perl. Code is always compiled in the current package. The initial current package is package main, but at any time you can switch the current package to another one using the package declaration. The current package determines which symbol table is used for name lookups (for names that aren't otherwise package-qualified). The notion of "current package" is both a compile-time and run-time concept. Most name lookups happen at compile-time, but run-time lookups happen when symbolic references are dereferenced, and also when new bits of code are parsed under eval. In particular, eval operations know which package they were invoked in, and propagate that package inward as the current package of the evaluated code. (You can always switch to a different package within the eval string, of course, since an eval string counts as a block, as does a file loaded in with do, require, or use.)
+
+Syntax:
+
+Package Package_Name;
+
+Example:
+
+# Package definition
+package Vehicle;
+sub Car{
+  print "This is a car subroutine!\n";
+}
+sub Motorbike{
+  print "This is a motorbike subroutine!\n";
+}
+
+
+# Using package Vehicle
+use Vehicle;
+
+# Function Car of vehicle
+Vehicle::Car();
+# Function Motorbike of vehicle
+Vehicle::Motorbike();
+

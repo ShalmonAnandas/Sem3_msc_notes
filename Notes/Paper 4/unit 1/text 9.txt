@@ -1,0 +1,26 @@
+Q9) What is an hash explain its literal representation of a hash
+
+The hashes is the most essential and influential part of the perl language. A hash is a group of key-value pairs. The keys are unique strings and values are scalar values.
+Hashes are declared using my keyword. The variable name starts with a (%) sign.
+Hashes are like arrays but there are two differences between them. First arrays are ordered but hashes are unordered. Second, hash elements are accessed using its value while array elements are accessed using its index value.
+No repeating keys are allowed in hashes which makes the key values unique inside a hash. Every key has its single value.
+
+
+A hash is a set of key/value pairs. Hash variables are preceded by a percent (%) sign. To refer to a single element of a hash, you will use the hash variable name preceded by a "$" sign and followed by the "key" associated with the value in curly brackets..
+Here is a simple example of using the hash variables −
+
+Example:
+
+%data = ('John Paul', 45, 'Lisa', 30, 'Kumar', 40);
+
+print "\$data{'John Paul'} = $data{'John Paul'}\n";
+print "\$data{'Lisa'} = $data{'Lisa'}\n";
+print "\$data{'Kumar'} = $data{'Kumar'}\n";
+
+This will produce the following result −
+
+Output:
+$data{'John Paul'} = 45
+$data{'Lisa'} = 30
+$data{'Kumar'} = 40
+

@@ -1,0 +1,68 @@
+Q1) what is perl write advantages and disadvantages
+
+-> Perl is a programming language developed by Larry Wall, especially designed for text processing. It stands for Practical Extraction and Report Language. It runs on a variety of platforms, such as Windows, Mac OS, and the various versions of UNIX.
+          Perl is a general-purpose programming language originally developed for text manipulation and now used for a wide range of tasks including system administration, web development, network programming, GUI development, and more.
+
+ADVANTAGES:
+   1. Perl contains the features of different languages like C, sed, awk, and sh etc. which makes the Perl more useful and productive. 
+System Administration: Due to having the different scripting languages capabilities Perl make the task of system administration very easy.
+
+  2. Perl Provides supports for cross platform and it is compatible with mark-up languages like HTML, XML etc.
+	•	It is very efficient in text-manipulation i.e. Regular Expression. It also provides the socket capability.
+	•	It is free and a Open Source software which is licensed under Artistic and GNU General Public License (GPL).
+	•	It is an embeddable language that’s why it can embed in web servers and database servers.
+	•	It supports more than 25, 000 open source modules on CPAN(Comprehensive Perl Archive Network) which provide many powerful extensions to the standard library. For example, XML processing, GUI(Graphical User Interface) and DI(Database Integration) etc.
+
+  Disadvantages of Perl:
+	•	Perl doesn’t supports portability due to CPAN modules.
+	•	Programs runs slowly and program needs to be interpreted each time when any changes are made.
+	•	In Perl, the same result can be achieved in several different ways which make the code untidy as well as unreadable.
+	•	Usability factor is lower when compared to other languages.
+
+
+Perl advantages:
+Its syntax is simple, which makes it easy to understand.
+It supports OOP concepts.
+Perl programs run easily on the system.
+It is more flexible to use.
+It supports all platforms and is much more portable.
+It has a rich set of Perl modules and free software.
+It is much more efficient to work on text and string manipulation as it is a scripting language.
+Perl combines features of many other languages which make it easy to understand.
+Perl disadvantages
+A Perl program containing CPAN modules will not run on another system which doesn't have CPAN modules installed.
+It is an interpretative language, so it is slower in comparison with other languages.
+It has untidy and unreadable codes.
+It starts creating problems when the code is larger than 200 lines.
+It is not portable.
+
+
+
+Why we learn perl
+	•	Perl is a stable, cross platform programming language.
+	•	Though Perl is not officially an acronym but few people used it as Practical Extraction and Report Language.
+	•	It is used for mission critical projects in the public and private sectors.
+	•	Perl is an Open Source software, licensed under its Artistic License, or the GNU General Public License (GPL).
+	•	Perl was created by Larry Wall.
+
+Features of perl
+	•	Perls database integration interface DBI supports third-party databases including Oracle, Sybase, Postgres, MySQL and others.
+	•	Perl works with HTML, XML, and other mark-up languages.
+	•	Perl supports Unicode.
+	•	Perl is Y2K compliant.
+	•	Perl supports both procedural and object-oriented programming.
+	•	Perl interfaces with external C/C++ libraries through XS or SWIG.
+	•	Perl is extensible. There are over 20,000 third party modules available from the Comprehensive Perl Archive Network (CPAN).
+	•	The Perl interpreter can be embedded into other systems.
+Example:
+# This will print "Hello, World"
+print "Hello, world\n";
+
+Applications of Perl
+
+	1.	Perl Is Best Suited For Text Manipulation
+	2.	Bioinformatics With BioPerl
+	3.	Use It For Scripting System Administration Tasks
+	4.	Using Perl For Text-To-Speech Translation
+	5.	Speech recognition is a complex, but increasingly important feature for a variety of applications from virtual assistants to chatbots. Here, too, Perl can help.
+	6.	Perl makes it easy to process and manipulate long sequences such as DNA and proteins. Perl makes it convenient to write a program that controls one or more other programs. As a final example, Perl is used to put biology research labs, and their results, on their own dynamic web sites. Perl does all this and more.

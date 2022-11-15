@@ -1,0 +1,50 @@
+Q8) write short note on
+
+Explain function and useful functions
+
+	1.	BioSeq module:
+
+￼
+
+￼
+
+
+￼
+
+￼
+
+
+
+	2.	SeqIO:
+
+￼
+
+￼
+
+
+
+	3.	AlignIo:
+
+AlignIO is patterned on the object and its commands have many of the same names as the commands in . Just as in the object can be created with -file and -format 
+
+Example:
+
+use Bio::AlignIO; my $io = Bio::AlignIO->new(
+                         -file => "receptors.aln",
+                         -format => "clustalw" );
+
+
+Bio::AlignIO reads many formats but does not write in every format (the same is true for Bio::SeqIO). AlignIO currently supports output in these formats:
+	•	fasta
+	•	mase
+	•	selex
+	•	clustalw
+	•	msf
+	•	phylip
+	•	po
+	•	stockholm
+	•	XMFA
+	•	metafasta
+
+Bio::AlignIO objects can be produced by bioperl-run alignment creation objects (e.g. Clustalw.pm, BLAST’s bl2seq, TCoffee.pm, and Lagan.pm or they can be read in from files of multiple-sequence alignments in various formats using AlignIO.
+

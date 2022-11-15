@@ -1,0 +1,67 @@
+Q7) what is perl formating explain its syntax, field holder with example
+
+Perl uses a writing template called a 'format' to output reports. To use the format feature of Perl, you have to define a format first and then you can use that format to write formatted data.
+
+Define a Format
+Following is the syntax to define a Perl format −
+
+format FormatName =
+fieldline
+value_one, value_two, value_three
+fieldline
+value_one, value_two
+.
+
+Here FormatName represents the name of the format. The fieldline is the specific way, the data should be formatted. The values lines represent the values that will be entered into the field line. You end the format with a single period.
+
+Example 
+
+format EMPLOYEE =
+===================================
+@<<<<<<<<<<<<<<<<<<<<<< @<< 
+$name $age
+@#####.##
+$salary
+===================================
+.
+
+select(STDOUT);
+$~ = EMPLOYEE;
+
+@n = ("Ali", "Raza", "Jaffer");
+@a  = (20,30, 40);
+@s = (2000.00, 2500.00, 4000.000);
+
+$i = 0;
+foreach (@n) {
+   $name = $_;
+   $age = $a[$i];
+   $salary = $s[$i++];
+   write;
+}
+
+Output:
+
+===================================
+Ali                     20
+  2000.00
+===================================
+===================================
+Raza                    30
+  2500.00
+===================================
+===================================
+Jaffer                  40
+  4000.00
+===================================
+
+
+Fieldholders:
+ – Value lines denotes/describes the values which will be entered into the fieldlines. – Format is ended by a single period (.) – Fieldholders have the space for the data which will be entered later.
+
+Syntax for Fieldholders:
+
+@<<<<<<<       left-justified (with 7 field spaces by counting '@' and '<')
+@|||||||       center-justified
+@###.####      numeric fieldholder
+@*             multiline fieldholder

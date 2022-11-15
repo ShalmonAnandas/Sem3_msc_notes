@@ -1,0 +1,60 @@
+Q6) write a short note on
+	1.	split function: 
+
+split() is a string function in Perl which is used to split or you can say to cut a string into smaller sections or pieces. There are different criteria to split a string, like on a single character, a regular expression(pattern), a group of characters or on undefined value etc.. The best thing about this function that user can specify how many sections to split the string into.
+
+Syntax:
+split /Pattern/, Expression, Limit
+
+In the above syntax, Pattern is specified a regular expression which provides the criteria to split the string. The Expression is the string which is to be split. The Limit is kind of restriction which stops the splitting at (n-1)th pattern found in the string.
+
+Example:
+
+@fields = split(/:/, "1:2:3:4:5");
+print "Field values are: @fields\n";
+
+When above code is executed, it produces the following result −
+
+Field values are: 1 2 3 4 5
+
+	2.	Join function: 
+
+       join() function in Perl combines the elements of LIST into a single string using the value of VAR to separate each element. It is effectively the opposite of split.
+Note that VAR is only placed between pairs of elements in the LIST; it will not be placed either before the first element or after the last element of the string.
+
+Syntax:
+join(VAR, LIST)
+
+Example:
+
+# Joining string with a separator 
+$string = join( "-", "Geeks", "for", "Geeks" ); 
+print"Joined String is $string\n"; 
+  
+# Joining string without a separator 
+$string = join( "", "Geeks", "for", "Geeks" ); 
+print"Joined String is $string\n"; 
+
+Output:
+Joined String is Geeks-for-Geeks
+Joined String is GeeksforGeeks
+
+	3.	Substring function: 
+
+  substr() in Perl returns a substring out of the string passed to the function starting from a given index up to the length specified. This function by default returns the remaining part of the string starting from the given index if the length is not specified. A replacement string can also be passed to the substr() function if you want to replace that part of the string with some other substring.
+
+Syntax: 
+substr(string, index, length, replacement)
+
+Example:
+$temp = substr("okay", 2);
+print "Substring valuye is $temp\n";
+
+$temp = substr("okay", 1,2);
+print "Substring valuye is $temp\n";
+
+Output:
+Substring valuye is ay
+Substring valuye is ka
+
+

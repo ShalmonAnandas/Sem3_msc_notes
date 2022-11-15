@@ -1,0 +1,24 @@
+Q7) What is bioperl why bio PERL used in bio informatics give its advantages and disadvantages.
+
+
+￼
+
+
+BioPerl is a collection of Perl modules that facilitate the development of Perl scripts for bioinformatics applications. It has played an integral role in the Human Genome Project.
+
+Bioperl provides access to data stores such as GenBank and SwissProt via a flexible series of sequence input/output modules, and to the emerging common sequence data storage format of the Open Bioinformatics Database Access project.
+
+Why use in bioinformatics 
+
+Bioperl provides an easy-to-use, stable, and consistent programming interface for bioinformatics application programmers. The Bioperl modules have been successfully and repeatedly used to reduce otherwise complex tasks to only a few lines of code.
+
+Perl makes it easy to process and manipulate long sequences such as DNA and proteins. Perl makes it convenient to write a program that controls one or more other programs. As a final example, Perl is used to put biology research labs, and their results, on their own dynamic web sites.
+
+Advantages:
+BioPerl was one of the first biological module repositories that increased its usability. It has very easy to install modules, along with a flexible global repository. BioPerl uses good test modules for a large variety of processes.
+
+Searching for similar sequences. Creating and manipulating sequence alignments. Searching for genes and other structures on genomic DNA. Developing machine readable sequence annotations.
+
+Disadvantages:
+
+There are many ways to use BioPerl, from simple scripting to very complex object programming. This makes the language not clear and sometimes hard to understand. For as many modules that BioPerl has, some do not always work the way they are intended.

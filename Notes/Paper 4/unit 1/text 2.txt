@@ -1,0 +1,10 @@
+Q2) Explain perl and it’s uses in bioinformatics
+
+
+-> Perl is a programming language developed by Larry Wall, especially designed for text processing. It stands for Practical Extraction and Report Language. It runs on a variety of platforms, such as Windows, Mac OS, and the various versions of UNIX.
+          Perl is a general-purpose programming language originally developed for text manipulation and now used for a wide range of tasks including system administration, web development, network programming, GUI development, and more.
+
+Perl uses in bioinformatics:
+
+In bioinformatics, a DNA sequence might be represented as an object inheriting from a more general implementation that covers the properties of all biological sequences. OOP would code this object by describing its properties such as length, checksum, and certainly the string of letters that comprises the sequence itself. Then one would implement accessor methods to retrieve or set these properties, and also more complex functions such as transcribe() that would take as an argument an organism-specific codon matrix and transform the DNA object to an RNA object.
+

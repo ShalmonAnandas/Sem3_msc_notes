@@ -1,0 +1,27 @@
+Q3) what do you mean by directory explain directory operation used in file handling.
+
+Perl is universal and cross-platform programming language mainly used for text manipulation and used in developing many software application like web development, graphical user interface application etc. It is preferred over other programming languages as it is faster, powerful and Perl has a lot of shortcuts which helps in writing a quick script making it take less time for writing. A directory is used in programming languages to store values in the form of lists. A directory is quite similar to a file. Just like a file, the directory also allows performing several operations on it. These operations are used for the modification of an existing directory or creation of a new one.
+
+
+Different operating systems have different commands to look at the files list within a directory. For example, 'li' command is used for Linux and 'dir' command is used for Windows.
+But we can also open a directory in Perl using Perl directory functions. Here, Directory handling is quite similar to file handling.
+
+Different operations that can be performed on a Directory are:
+
+	1.	Creation of a new Directory
+	2.	Opening an existing Directory
+	3.	Reading content of a Directory
+	4.	Changing a Directory path
+	5.	Closing a Directory
+	6.	Removing a Directory
+
+Following are the standard functions used to play with directories.
+opendir DIRHANDLE, EXPR  # To open a directory
+readdir DIRHANDLE        # To read a directory
+rewinddir DIRHANDLE      # Positioning pointer to the begining
+telldir DIRHANDLE        # Returns current position of the dir
+seekdir DIRHANDLE, POS   # Pointing pointer to POS inside dir
+closedir DIRHANDLE       # Closing a directory.
+
+
+

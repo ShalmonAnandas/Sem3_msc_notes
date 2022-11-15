@@ -1,0 +1,15 @@
+Q12) Elaborate on controlled statement used in perl
+
+Loop control statements change the execution from its normal sequence. When execution leaves a scope, all automatic objects that were created in that scope are destroyed.
+Perl supports the following control statements. Click the following links to check their detail.
+Sr.No.	Control Statement & Description
+1	next statement
+It causes the loop to skip the remainder of its body and immediately retest its condition prior to reiterating.
+2	last statement
+Terminates the loop statement and transfers execution to the statement immediately following the loop.
+3	continue statement
+A continue BLOCK, it is always executed just before the conditional is about to be evaluated again.
+4	redo statement
+The redo command restarts the loop block without evaluating the conditional again. The continue block, if any, is not executed.
+5	goto statement
+Perl supports a goto command with three forms: goto label, goto expr, and goto &name

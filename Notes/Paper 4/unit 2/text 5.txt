@@ -1,0 +1,18 @@
+Q5) explain quantifiers used in regex.
+
+Quantifiers
+
+The quantifiers are used in the regular expression for specifying the number of occurrences of a character.
+
+Perl provides several numbers of regular expression quantifiers which are used to specify how many times a given character can be repeated before matching is done. This is mainly used when the number of characters going to be matched is unknown.
+
+Characters	Description	Example
++	This character specifies an expression to its left for one or more times.	s+ is an expression which gives "s", "ss", "sss", and so on.
+?	This character specifies an expression to its left for 0 (Zero) or 1 (one)times.	aS? is an expression which gives either "a" or "as", but not "ass".
+*	This character specifies an expression to its left for 0 or more times	Br* is an expression which gives "B", "Br", "Brr", "Brrr", and so on…
+{x}	It specifies an expression to its left for only x times.	Mab{5} is an expression which gives the following string which contains 5 b's:
+"Mabbbbb"
+{x, }	It specifies an expression to its left for x or more times.	Xb{3, } is an expression which gives various strings containing at least 3 b's. Such strings are "Xbbb", "Xbbbb", and so on.
+{x,y}	It specifies an expression to its left, at least x times but less than y times.	Pr{3,6}a is an expression which provides two strings.
+Both strings are as follows:
+"Prrrr" and "Prrrrr

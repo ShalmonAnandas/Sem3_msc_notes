@@ -1,0 +1,21 @@
+Q2) what do you mean by file handling? Explain file operation used in file handling.
+
+File handling is the most important part in any programming language. A filehandle is an internal Perl structure that associates with a file name.
+Perl File handling is important as it is helpful in accessing file such as text files, log files or configuration files.
+Perl filehandles are capable of creating, reading, opening and closing a file.
+
+In Perl, a FileHandle associates a name to an external file, that can be used until the end of the program or until the FileHandle is closed. In short, a FileHandle is like a connection that can be used to modify the contents of an external file and a name is given to the connection (the FileHandle) for faster access and ease.
+
+
+The three basic FileHandles in Perl are STDIN, STDOUT, and STDERR, which represent Standard Input, Standard Output, and Standard Error devices respectively.
+
+File Handling is usually done through the open function.
+Syntax: open(FileHandle, Mode, FileName);
+Parameters:
+	•	FileHandle- The reference to the file, that can be used within the program or until its closure.
+	•	Mode- Mode in which a file is to be opened.
+	•	FileName- The name of the file to be opened.
+
+The FileHandle is closed using the close function.
+Syntax: close(FileHandle); Parameters:
+	•	FileHandle- The FileHandle to be closed.

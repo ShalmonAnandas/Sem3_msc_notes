@@ -1,0 +1,87 @@
+Q7) What is an array List down operators used in array.
+
+A Perl array variable stores an ordered list of scalar values.
+To refer a single element of Perl array, variable name will be preceded with dollar ($) sign followed by index of element in the square bracket.
+
+Perl Simple Array Example
+This is a simple example to use Perl array.
+
+@num = (2015, 2016, 2017);               
+@string = ("One", "Two", "Three");  
+print "$num[0]\n";  
+print "$num[1]\n";  
+print "$num[2]\n";  
+print "$string[0]\n";  
+print "$string[1]\n";  
+print "$string[2]\n";  
+
+Output: 
+
+2015
+2016
+2017
+One
+Two
+Three
+
+
+Array Operators:
+
+1) Push on Array
+
+The push array function appends a new element at the end of the array.
+
+@array = ("pink", "red", "blue");  
+push @array, "orange";  
+print "@array\n";  
+
+Output: 
+pink red blue orange
+
+In the above program, "orange" element is added at the end of the array.
+
+2) Pop on Array
+The pop array function removes the last element from the array.
+
+@array = ("pink", "red", "blue");  
+pop @array;  
+print "@array\n";  
+
+Output:
+pink red 
+
+
+In the above program, "blue" element is removed from the end of the array.
+
+3) Shift on Array
+The shift array function removes the left most element of array and thus shorten the array by 1.
+
+@array = ("pink", "red", "blue");  
+shift @array;  
+print "@array\n";  
+
+Output:
+red blue
+
+In the above program, "pink" is removed from the array.
+
+4) Unshift on Array
+The unshift array function adds a new element at the start of the array.
+
+@array = ("pink", "red", "blue");  
+unshift @array, "orange";  
+print "@array\n";  
+
+Output:
+orange pink red blue 
+
+In the above program, "orange" is added at the start of the array.
+
+https://www.javatpoint.com/perl-array 
+
+
+
+
+
+
+

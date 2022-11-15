@@ -1,0 +1,62 @@
+Q10) elaborate on sub routine with the help of with and without para metres with suitable example
+
+Perl Functions and Subroutines
+Perl functions and subroutines are used to reuse a code in a program. You can use a function at several places in your application with different parameters.
+There is only one difference in function and subroutine, subroutine is created with sub keyword and it returns a value. You can divide your code into separate subroutines. Logically each function in each division should perform a specific task.
+Syntax of subroutine:
+
+sub subName{  
+body  
+}  
+
+In the following example, we are defining a subroutine function 'myOffice' and call it
+
+#defining function  
+sub myOffice{  
+   print "javaTpoint!\n";  
+}  
+# calling Function   
+myOffice();  
+
+Output:
+javaTpoint!
+
+
+
+Perl subroutine Function with Arguments
+You can pass any number of arguments inside a subroutine. Parameters are passed as a list in the special @_ list array variables. Hence, the first argument to the function will be $_[0], second will be $_[1] and so on
+
+You can pass various arguments to a subroutine like you do in any other programming language and they can be acessed inside the function using the special array @_. Thus the first argument to the function is in $_[0], the second is in $_[1], and so on.
+
+Example:
+
+# Function definition
+sub Average {
+   # get total number of arguments passed.
+   $n = scalar(@_);
+   $sum = 0;
+
+   foreach $item (@_) {
+      $sum += $item;
+   }
+   $average = $sum / $n;
+
+   print "Average for the given numbers : $average\n";
+}
+
+# Function call
+Average(10, 20, 30);
+
+Output:
+Average for the given numbers : 20
+
+
+Perl subroutine Function with without Arguments
+
+&marine; # style 2
+
+sub marine {
+    state $n = 0; # private, persistent variable $n
+    $n += 1;
+    print "Hello, sailor number $n!\n";
+}

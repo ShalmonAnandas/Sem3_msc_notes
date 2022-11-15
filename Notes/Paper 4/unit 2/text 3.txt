@@ -1,0 +1,35 @@
+Q3) what is match operator and explain its modifiers.
+
+
+       The Match Operator
+The match operator, m//, is used to match a string or statement to a regular expression. For example, to match the character sequence "foo" against the scalar $bar, you might use a statement like this −
+
+Example:
+$bar = "This is foo and again foo";
+if ($bar =~ /foo/) {
+   print "First time is matching\n";
+} else {
+   print "First time is not matching\n";
+}
+
+Output:
+First time is matching
+
+Match Operator Modifiers
+              The match operator supports its own set of modifiers. The /g modifier allows for global matching. The /i modifier will make the match case insensitive. Here is the complete list of modifiers
+
+Sr.No.	Modifier & Description
+1	i
+Makes the match case insensitive.
+2	m
+Specifies that if the string has newline or carriage return characters, the ^ and $ operators will now match against a newline boundary, instead of a string boundary.
+3	o
+Evaluates the expression only once.
+4	s
+Allows use of . to match a newline character.
+5	x
+Allows you to use white space in the expression for clarity.
+6	g
+Globally finds all matches.
+7	cg
+Allows the search to continue even after a global match fails

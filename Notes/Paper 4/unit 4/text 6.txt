@@ -1,0 +1,81 @@
+Q6) Commands of Mongo DB
+
+The use Command
+MongoDB use DATABASE_NAME is used to create database. The command will create a new database if it doesn't exist, otherwise it will return the existing database.
+Syntax
+Basic syntax of use DATABASE statement is as follows −
+use DATABASE_NAME
+Example
+If you want to use a database with name <mydb>, then use DATABASE statement would be as follows −
+>use mydb
+switched to db mydb
+To check your currently selected database, use the command db
+>db
+mydb
+If you want to check your databases list, use the command show dbs.
+>show dbs
+local     0.78125GB
+test      0.23012GB
+Your created database (mydb) is not present in list. To display database, you need to insert at least one document into it.
+>db.movie.insert({"name":"tutorials point"})
+>show dbs
+local      0.78125GB
+mydb       0.23012GB
+test       0.23012GB
+In MongoDB default database is test. If you didn't create any database, then collections will be stored in test database.
+
+
+The dropDatabase() Method
+MongoDB db.dropDatabase() command is used to drop a existing database.
+Syntax
+Basic syntax of dropDatabase() command is as follows −
+db.dropDatabase()
+This will delete the selected database. If you have not selected any database, then it will delete default 'test' database.
+Example
+First, check the list of available databases by using the command, show dbs.
+>show dbs
+local      0.78125GB
+mydb       0.23012GB
+test       0.23012GB
+>
+If you want to delete new database <mydb>, then dropDatabase() command would be as follows −
+>use mydb
+switched to db mydb
+>db.dropDatabase()
+>{ "dropped" : "mydb", "ok" : 1 }
+>
+
+
+
+MongoDB commands
+   mongo
+Enter the MongoDB client
+show dbs
+List all database. Should have at least on record to display the db in list.
+db
+Display active database name
+db.stats()
+Show the database name, number of collection and documents in the database, etc.
+use db_name
+To switch / create database
+db.dropDatabase( )
+ Drop database
+         
+  **CURD** OPERATION
+Database in MongoDB
+❖ To create a database use company;
+Collections
+Tables in MongoDB is called as collections
+❖ To create a collection
+➢ db.createCollection(name,
+options)
+➢ Eg : db.createCollection(‘Employees’, options)
+❖ Drop a collection
+➢ db.collection_name.drop()
+        Name
+Collection name
+Options
+❖ capped(boolean) -fixed size collecction that automatically Overwrite oldest entries if collection size is reached.
+❖ autoindexId(boolean) - Automatically index the _id field
+❖ size(number) - Maximum size of the collection in bytes if capped = true
+❖ max - Maximum number of documents allowed in collection

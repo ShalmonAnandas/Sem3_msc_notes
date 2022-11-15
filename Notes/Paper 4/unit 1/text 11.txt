@@ -1,0 +1,59 @@
+Q11) What do you mean by reference and DeReference in perl explain its features along with suitable example ?
+
+References
+In Perl, we use variables to access data stored in a memory location(all data and functions are stored in memory). Variables are assigned with data values which are used in various operations. Perl Reference is a way to access the same data but with a different variable. A reference in Perl is a scalar data type which holds the location of another variable. Another variable can be scalar, hashes, arrays, function name etc. Nested data structure can be created easily as a user can create a list which contains the references to another list that can further contain the references to arrays, scalar or hashes etc.
+
+Example:
+
+# Scalar Value Reference
+
+# defining scalar
+$scalar_val = 1234;
+ 
+# making reference of scalar variable
+$reference_scalar = \$scalar_val; 
+
+
+Features
+
+	•	A reference to an anonymous hash can be created using the curly brackets {} around the key and value pairs.
+
+Example:
+# creating reference to anonymous hash
+$ref_to_anonymous_hash = {'GFG' => '1', 'Geeks' => '2'};
+
+
+	•	A reference to an anonymous array can be created using the square brackets [].
+
+Example:
+# creating reference to an anonymous array
+$ref_to_anonymous_array = [20, 30, ['G', 'F', 'G']];
+
+
+Dereferencing
+
+Now, after we have made the reference, we need to use it to access the value. Dereferencing is the way of accessing the value in the memory pointed by the reference. In order to dereference, we use the prefix $, @, % or & depending on the type of the variable(a reference can point to a array, scalar, or hash etc).
+
+Example:
+
+# Dereferencing of a Scalar 
+  
+# defining a scalar 
+$scalar = 1234; 
+
+  
+# creating an reference to scalar variable  
+$reference_scalar = \$scalar;  
+
+  
+# Dereferencing 
+# printing the value stored  
+# at $reference_scalar by prefixing  
+# $ as it is a Scalar reference 
+print $$reference_scalar;   
+
+Output:
+
+1234
+
+

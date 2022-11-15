@@ -1,0 +1,23 @@
+Q1) what is regexs How regexs works give its application
+
+Regexs:     Regular Expression (Regex or Regexp or RE) in Perl is a special text string for describing a search pattern within a given text.
+
+         A regular expression is a string of characters that defines the pattern or patterns you are viewing. The syntax of regular expressions in Perl is very similar to what you will find within other regular expression.supporting programs, such as sed, grep, and awk.
+                      The basic method for applying a regular expression is to use the pattern binding operators =~ and !~. The first operator is a test and assignment operator.
+
+There are three regular expression operators within Perl.
+	•	Match Regular Expression - m//
+	•	Substitute Regular Expression - s///
+	•	Transliterate Regular Expression - tr///
+               
+      The forward slashes in each case act as delimiters for the regular expression (regex) that you are specifying. If you are comfortable with any other delimiter, then you can use in place of forward slash.
+
+
+
+￼
+
+
+Application:
+	•	It can be used to count the number of occurrence of a specified pattern in a string.
+	•	It can be used to search for a string which matches the specified pattern.
+	•	It can also replace the searched pattern with some other specified string.

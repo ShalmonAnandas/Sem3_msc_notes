@@ -1,0 +1,52 @@
+Q8) what is an array and explain its advantages and disadvantages and its uses.
+
+An array is a variable that stores an ordered list of scalar values. Array variables are preceded by an "at" (@) sign. To refer to a single element of an array, you will use the dollar sign ($) with the variable name followed by the index of the element in square brackets.
+
+
+Here is a simple example of using the array variables
+
+Example:
+@ages = (25, 30, 40);             
+@names = ("John Paul", "Lisa", "Kumar");
+
+print "\$ages[0] = $ages[0]\n";
+print "\$ages[1] = $ages[1]\n";
+print "\$ages[2] = $ages[2]\n";
+print "\$names[0] = $names[0]\n";
+print "\$names[1] = $names[1]\n";
+print "\$names[2] = $names[2]\n";
+
+Here we have used the escape sign (\) before the $ sign just to print it. Other Perl will understand it as a variable and will print its value. When executed, this will produce the following result −
+
+Output :
+
+$ages[0] = 25
+$ages[1] = 30
+$ages[2] = 40
+$names[0] = John Paul
+$names[1] = Lisa
+$names[2] = Kumar
+
+
+
+Advantages of using Array in Perl
+Below are the advantages are as follows.
+	•	Multiple data items are accessed by using an array.
+	•	Using array we can save the memory.
+	•	Using an array in Perl debugging of code is easy.
+	•	It is efficient to declare array while defining a single element.
+	•	The array is used to help increase the reusability of code.
+
+
+Disadvantages of array:
+	•	The size of the array should be known in advance.
+	•	The array is a static data structure with a fixed size so, the size of the array cannot be modified further and hence no modification can be done during runtime.
+	•	Insertion and deletion operations are costly in arrays as elements are stored in contiguous memory.
+	•	If the size of the declared array is more than the required size then, it can lead to memory wastage. 
+
+Uses of array
+
+
+In Perl, array is a special type of variable. The array is used to store the list of values and each object of the list is termed as an element. Elements can either be a number, string, or any type of scalar data including another variable.
+
+

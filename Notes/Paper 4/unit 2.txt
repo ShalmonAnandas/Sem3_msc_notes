@@ -1,0 +1,277 @@
+﻿Q1) what is regexs How regexs works give its application
+
+Regexs:     Regular Expression (Regex or Regexp or RE) in Perl is a special text string for describing a search pattern within a given text.
+
+A regular expression is a string of characters that defines the pattern or patterns you are viewing. The syntax of regular expressions in Perl is very similar to what you will find within other regular expression.supporting programs, such as sed, grep, and awk.
+The basic method for applying a regular expression is to use the pattern binding operators =~ and !~. The first operator is a test and assignment operator.
+
+There are three regular expression operators within Perl.
+	•	Match Regular Expression - m//
+	•	Substitute Regular Expression - s///
+	•	Transliterate Regular Expression - tr///
+
+The forward slashes in each case act as delimiters for the regular expression (regex) that you are specifying. If you are comfortable with any other delimiter, then you can use in place of forward slash.
+
+
+
+￼
+
+
+Application:
+	•	It can be used to count the number of occurrence of a specified pattern in a string.
+	•	It can be used to search for a string which matches the specified pattern.
+	•	It can also replace the searched pattern with some other specified string.
+Q2) Elaborate on types of regular expression operators.
+
+There are three regular expression operators within Perl.
+	•	Match Regular Expression - m//
+	•	Substitute Regular Expression - s///
+	•	Transliterate Regular Expression - tr///
+
+
+The forward slashes in each case act as delimiters for the regular expression (regex) that you are specifying. If you are comfortable with any other delimiter, then you can use in place of forward slash.
+
+
+	1.	The Match Operator
+The match operator, m//, is used to match a string or statement to a regular expression. For example, to match the character sequence "foo" against the scalar $bar, you might use a statement like this −
+
+Example:
+$bar = "This is foo and again foo";
+if ($bar =~ /foo/) {
+print "First time is matching\n";
+} else {
+print "First time is not matching\n";
+}
+
+Output:
+First time is matching
+
+
+	2.	The Substitution Operator
+The substitution operator, s///, is really just an extension of the match operator that allows you to replace the text matched with some new text. The basic form of the operator is −
+
+s/PATTERN/REPLACEMENT/;
+The PATTERN is the regular expression for the text that we are looking for. The REPLACEMENT is a specification for the text or regular expression that we want to use to replace the found text with. For example, we can replace all occurrences of dog with cat using the following regular expression −
+
+Example:
+
+$string = "The cat sat on the mat";
+$string =~ s/cat/dog/;
+
+print "$string\n";
+
+Output:
+
+The dog sat on the mat
+
+
+	3.	The Translation Operator
+Translation is similar, but not identical, to the principles of substitution, but unlike substitution, translation (or transliteration) does not use regular expressions for its search on replacement values. The translation operators are −
+tr/SEARCHLIST/REPLACEMENTLIST/cds
+y/SEARCHLIST/REPLACEMENTLIST/cds
+The translation replaces all occurrences of the characters in SEARCHLIST with the corresponding characters in REPLACEMENTLIST. For example, using the "The cat sat on the mat." string we have been using in this chapter −
+
+Example:
+
+$string = 'The cat sat on the mat';
+$string =~ tr/a/o/;
+
+print "$string\n";
+
+Output:
+
+The cot sot on the mot.
+Q3) what is match operator and explain its modifiers.
+
+
+The Match Operator
+The match operator, m//, is used to match a string or statement to a regular expression. For example, to match the character sequence "foo" against the scalar $bar, you might use a statement like this −
+
+Example:
+$bar = "This is foo and again foo";
+if ($bar =~ /foo/) {
+print "First time is matching\n";
+} else {
+print "First time is not matching\n";
+}
+
+Output:
+First time is matching
+
+Match Operator Modifiers
+The match operator supports its own set of modifiers. The /g modifier allows for global matching. The /i modifier will make the match case insensitive. Here is the complete list of modifiers
+
+Sr.No.	Modifier & Description
+1. 	i
+Makes the match case insensitive.
+2. 	m
+Specifies that if the string has newline or carriage return characters, the ^ and $ operators will now match against a newline boundary, instead of a string boundary.
+3. 	o
+Evaluates the expression only once.
+4. 	s
+Allows use of . to match a newline character.
+5. 	x
+Allows you to use white space in the expression for clarity.
+6. 	g
+Globally finds all matches.
+7. 	cg
+Allows the search to continue even after a global match fails
+Q4) what is meta characters? List down Meta characters used in perl and explain any seven. With example.
+
+Metacharacters
+
+A metacharacter is a character that has a special meaning during pattern processing. You use metacharacters in regular expressions to define the search criteria and any text manipulations.
+
+Metacharacters	Description	Example
+^	This character is used to match an expression to its right at the start of a string.	^a is an expression match to the string which starts with 'a' such as "aab", "a9c", "apr", "aaaaab", etc.
+$	The $sign is used to match an expression to its left at the end of a string.	r$ is an expression match to a string which ends with r such as "aaabr", "ar", "r", "aannn9r", etc.
+.	This character is used to match any single character in a string except the line terminator, i.e. /n.	b.x is an expression that match strings such as "bax", "b9x", "bar".
+|	It is used to match a particular character or a group of characters on either side. If the character on the left side is matched, then the right side's character is ignored.	A|b is an expression which gives various strings, but each string contains either a or b.
+\	It is used to escape a special character after this sign in a string.	
+A	It is used to match the character 'A' in the string.	This expression matches those strings in which at least one-time A is present. Such strings are "Amcx", "mnAr", "mnopAx4".
+Ab	It is used to match the substring 'ab' in the string.	This expression matches those strings in which 'Ab' is present at least one time. Such strings are "Abcx", "mnAb", "mnopAbx4"
+Q5) explain quantifiers used in regex.
+
+Quantifiers
+
+The quantifiers are used in the regular expression for specifying the number of occurrences of a character.
+
+Perl provides several numbers of regular expression quantifiers which are used to specify how many times a given character can be repeated before matching is done. This is mainly used when the number of characters going to be matched is unknown.
+
+Characters	Description	Example
++	This character specifies an expression to its left for one or more times.	s+ is an expression which gives "s", "ss", "sss", and so on.
+?	This character specifies an expression to its left for 0 (Zero) or 1 (one)times.	aS? is an expression which gives either "a" or "as", but not "ass".
+8. 	This character specifies an expression to its left for 0 or more times	Br* is an expression which gives "B", "Br", "Brr", "Brrr", and so on…
+{x}	It specifies an expression to its left for only x times.	Mab{5} is an expression which gives the following string which contains 5 b's:
+"Mabbbbb"
+{x, }	It specifies an expression to its left for x or more times.	Xb{3, } is an expression which gives various strings containing at least 3 b's. Such strings are "Xbbb", "Xbbbb", and so on.
+{x,y}	It specifies an expression to its left, at least x times but less than y times.	Pr{3,6}a is an expression which provides two strings.
+Both strings are as follows:
+"Prrrr" and "Prrrrr
+Q6) write a short note on
+	1.	split function:
+
+split() is a string function in Perl which is used to split or you can say to cut a string into smaller sections or pieces. There are different criteria to split a string, like on a single character, a regular expression(pattern), a group of characters or on undefined value etc.. The best thing about this function that user can specify how many sections to split the string into.
+
+Syntax:
+split /Pattern/, Expression, Limit
+
+In the above syntax, Pattern is specified a regular expression which provides the criteria to split the string. The Expression is the string which is to be split. The Limit is kind of restriction which stops the splitting at (n-1)th pattern found in the string.
+
+Example:
+
+@fields = split(/:/, "1:2:3:4:5");
+print "Field values are: @fields\n";
+
+When above code is executed, it produces the following result −
+
+Field values are: 1 2 3 4 5
+
+	2.	Join function:
+
+join() function in Perl combines the elements of LIST into a single string using the value of VAR to separate each element. It is effectively the opposite of split.
+Note that VAR is only placed between pairs of elements in the LIST; it will not be placed either before the first element or after the last element of the string.
+
+Syntax:
+join(VAR, LIST)
+
+Example:
+
+# Joining string with a separator
+$string = join( "-", "Geeks", "for", "Geeks" );
+print"Joined String is $string\n";
+  
+# Joining string without a separator
+$string = join( "", "Geeks", "for", "Geeks" );
+print"Joined String is $string\n";
+
+Output:
+Joined String is Geeks-for-Geeks
+Joined String is GeeksforGeeks
+
+	3.	Substring function:
+
+substr() in Perl returns a substring out of the string passed to the function starting from a given index up to the length specified. This function by default returns the remaining part of the string starting from the given index if the length is not specified. A replacement string can also be passed to the substr() function if you want to replace that part of the string with some other substring.
+
+Syntax:
+substr(string, index, length, replacement)
+
+Example:
+$temp = substr("okay", 2);
+print "Substring valuye is $temp\n";
+
+$temp = substr("okay", 1,2);
+print "Substring valuye is $temp\n";
+
+Output:
+Substring valuye is ay
+Substring valuye is ka
+
+
+Q7) what is perl formating explain its syntax, field holder with example
+
+Perl uses a writing template called a 'format' to output reports. To use the format feature of Perl, you have to define a format first and then you can use that format to write formatted data.
+
+Define a Format
+Following is the syntax to define a Perl format −
+
+format FormatName =
+fieldline
+value_one, value_two, value_three
+fieldline
+value_one, value_two
+.
+
+Here FormatName represents the name of the format. The fieldline is the specific way, the data should be formatted. The values lines represent the values that will be entered into the field line. You end the format with a single period.
+
+Example
+
+format EMPLOYEE =
+===================================
+@<<<<<<<<<<<<<<<<<<<<<< @<<
+$name $age
+@#####.##
+$salary
+===================================
+.
+
+select(STDOUT);
+$~ = EMPLOYEE;
+
+@n = ("Ali", "Raza", "Jaffer");
+@a  = (20,30, 40);
+@s = (2000.00, 2500.00, 4000.000);
+
+$i = 0;
+foreach (@n) {
+$name = $_;
+$age = $a[$i];
+$salary = $s[$i++];
+write;
+}
+
+Output:
+
+===================================
+Ali                     20
+2000.00
+===================================
+===================================
+Raza                    30
+2500.00
+===================================
+===================================
+Jaffer                  40
+4000.00
+===================================
+
+
+Fieldholders:
+ – Value lines denotes/describes the values which will be entered into the fieldlines. – Format is ended by a single period (.) – Fieldholders have the space for the data which will be entered later.
+
+Syntax for Fieldholders:
+
+@<<<<<<<       left-justified (with 7 field spaces by counting '@' and '<')
+@|||||||       center-justified
+@###.####      numeric fieldholder
+@*             multiline fieldholder

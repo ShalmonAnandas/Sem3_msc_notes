@@ -1,0 +1,258 @@
+﻿Q1) what is package, explain with syntax how to create and use perl package with example.
+
+
+A package is a collection or code group in Perl. Meanwhile, a module in Perl is a package defined in a file with the name “package” and the the extension .pm.
+
+We can only define the package once in a program; whereas, more than one different module can have the same name in a single code file.
+
+A package name must always be at the start of a Perl program.
+
+Perl provides a mechanism to protect different sections of code from inadvertently tampering with each other's variables. In fact, apart from certain magical variables, there's really no such thing as a global variable in Perl. Code is always compiled in the current package. The initial current package is package main, but at any time you can switch the current package to another one using the package declaration. The current package determines which symbol table is used for name lookups (for names that aren't otherwise package-qualified). The notion of "current package" is both a compile-time and run-time concept. Most name lookups happen at compile-time, but run-time lookups happen when symbolic references are dereferenced, and also when new bits of code are parsed under eval. In particular, eval operations know which package they were invoked in, and propagate that package inward as the current package of the evaluated code. (You can always switch to a different package within the eval string, of course, since an eval string counts as a block, as does a file loaded in with do, require, or use.)
+
+Syntax:
+
+Package Package_Name;
+
+Example:
+
+# Package definition
+package Vehicle;
+sub Car{
+print "This is a car subroutine!\n";
+}
+sub Motorbike{
+print "This is a motorbike subroutine!\n";
+}
+
+
+# Using package Vehicle
+use Vehicle;
+
+# Function Car of vehicle
+Vehicle::Car();
+# Function Motorbike of vehicle
+Vehicle::Motorbike();
+
+Q2) what do you mean by file handling? Explain file operation used in file handling.
+
+File handling is the most important part in any programming language. A filehandle is an internal Perl structure that associates with a file name.
+Perl File handling is important as it is helpful in accessing file such as text files, log files or configuration files.
+Perl filehandles are capable of creating, reading, opening and closing a file.
+
+In Perl, a FileHandle associates a name to an external file, that can be used until the end of the program or until the FileHandle is closed. In short, a FileHandle is like a connection that can be used to modify the contents of an external file and a name is given to the connection (the FileHandle) for faster access and ease.
+
+
+The three basic FileHandles in Perl are STDIN, STDOUT, and STDERR, which represent Standard Input, Standard Output, and Standard Error devices respectively.
+
+File Handling is usually done through the open function.
+Syntax: open(FileHandle, Mode, FileName);
+Parameters:
+	•	FileHandle- The reference to the file, that can be used within the program or until its closure.
+	•	Mode- Mode in which a file is to be opened.
+	•	FileName- The name of the file to be opened.
+
+The FileHandle is closed using the close function.
+Syntax: close(FileHandle); Parameters:
+	•	FileHandle- The FileHandle to be closed.
+Q3) what do you mean by directory explain directory operation used in file handling.
+
+Perl is universal and cross-platform programming language mainly used for text manipulation and used in developing many software application like web development, graphical user interface application etc. It is preferred over other programming languages as it is faster, powerful and Perl has a lot of shortcuts which helps in writing a quick script making it take less time for writing. A directory is used in programming languages to store values in the form of lists. A directory is quite similar to a file. Just like a file, the directory also allows performing several operations on it. These operations are used for the modification of an existing directory or creation of a new one.
+
+
+Different operating systems have different commands to look at the files list within a directory. For example, 'li' command is used for Linux and 'dir' command is used for Windows.
+But we can also open a directory in Perl using Perl directory functions. Here, Directory handling is quite similar to file handling.
+
+Different operations that can be performed on a Directory are:
+
+	1.	Creation of a new Directory
+	2.	Opening an existing Directory
+	3.	Reading content of a Directory
+	4.	Changing a Directory path
+	5.	Closing a Directory
+	6.	Removing a Directory
+
+Following are the standard functions used to play with directories.
+opendir DIRHANDLE, EXPR  # To open a directory
+readdir DIRHANDLE        # To read a directory
+rewinddir DIRHANDLE      # Positioning pointer to the begining
+telldir DIRHANDLE        # Returns current position of the dir
+seekdir DIRHANDLE, POS   # Pointing pointer to POS inside dir
+closedir DIRHANDLE       # Closing a directory.
+
+
+
+Q4) elaborate on minus D. And globe function.
+
+Perl functions and subroutines are used to reuse a code in a program. You can use a function at several places in your application with different parameters.
+There is only one difference in function and subroutine, subroutine is created with sub keyword and it returns a value. You can divide your code into separate subroutines. Logically each function in each division should perform a specific task.
+
+
+glob() function in Perl is used to print the files present in a directory passed to it as an argument. This function can print all or the specific files whose extension has been passed to it.
+
+Syntax: glob(Directory_name/File_type);
+Parameter: path of the directory of which files are to be printed.
+Returns: the list of files present in the given directory.
+
+
+Example 1: Printing names of all the files in the directory
+#!/usr/bin/perl
+  
+# To store the files
+# from the directory in the array
+@files = glob('C:/Users/GeeksForGeeks/Folder/*');
+
+  
+# Printing the created array
+print "@files\n"
+
+Above example will print all the files of the requested directory.
+Q5) explain object oriented rules in PERL.
+
+Object-oriented programming: As the name suggests, Object-Oriented Programming or OOPs refers to languages that uses objects in programming. Object-oriented programming aims to implement real-world entities like inheritance, hiding, polymorphism, etc in programming. The main aim of OOP is to bind together the data and the functions that operate on them so that no other part of the code can access this data except that function.
+
+
+Object-oriented programming: As the name suggests, Object-Oriented Programming or OOPs refers to languages that uses objects in programming. Object-oriented programming aims to implement real-world entities like inheritance, hiding, polymorphism, etc in programming. The main aim of OOP is to bind together the data and the functions that operate on them so that no other part of the code can access this data except that function.
+ OOPs Concepts:
+
+	•	Class
+	•	Object
+	•	Method
+	•	Polymorphism
+	•	Inheritance
+	•	Encapsulation
+	•	Abstraction
+
+	1.	Class: A class is a user defined blueprint or prototype from which objects are created.  It represents the set of properties or methods that are common to all objects of one type.
+	•	Class name: The name should begin with a initial letter (capitalized by convention).
+	•	Superclass(if any): The name of the class’s parent (superclass), if any, preceded by the keyword ‘use’.
+	•	Constructors(if any):Constructors in Perl subroutines returns an object which is an instance of the class. In Perl, the convention is to name the constructor “new”.
+	•	Body: The class body surrounded by braces, { }.
+
+	2.	Object: It is a basic unit of Object Oriented Programming and represents the real life entities.  A typical Perl program creates many objects, which as you know, interact by invoking methods. An object consists of :
+	•	State : It is represented by attributes of an object. It also reflects the properties of an object.
+	•	Behavior : It is represented by methods of an object. It also reflects the response of an object with other objects.
+	•	Identity : It gives a unique name to an object and enables one object to interact with other objects.
+
+	3.	Method: A method is a collection of statements that perform some specific task and return result to the caller. A method can perform some specific task without returning anything. Methods are time savers and help us to reuse the code without retyping the code.
+
+	4.	Polymorphism: Polymorphism refers to the ability of OOPs programming languages to differentiate between entities with the same name efficiently. This is done by Perl with the help of the signature and declaration of these entities. Polymorphism in Perl are mainly of 2 types:
+	•	Overloading in Perl
+	•	Overriding in Perl
+
+	5.	Inheritance: Inheritance is an important pillar of OOP(Object Oriented Programming). It is the mechanism in perl by which one class is allowed to inherit the features(fields and methods) of another class. Important terminology:
+	•	Super Class: The class whose features are inherited is known as superclass(or a base class or a parent class).
+	•	Sub Class: The class that inherits the other class is known as subclass(or a derived class, extended class, or child class). The subclass can add its own fields and methods in addition to the superclass fields and methods.
+	•	Reusability: Inheritance supports the concept of “reusability”, i.e. when we want to create a new class and there is already a class that includes some of the code that we want, we can derive our new class from the existing class. By doing this, we are reusing the fields and methods of the existing class.
+A class can be created in perl by using packages and can be inherited by using the ‘use’ keyword.
+
+Syntax: use package_name
+
+	6.	Encapsulation: Encapsulation is defined as the wrapping up of data under a single unit. It is the mechanism that binds together code and the data it manipulates. Another way to think about encapsulation is, it is a protective shield that prevents the data from being accessed by the code outside this shield.
+	•	Technically in encapsulation, the variables or data of a class is hidden from any other class and can be accessed only through any member function of own class in which they are declared.
+	•	As in encapsulation, the data in a class is hidden from other classes, so it is also known as data-hiding.
+	•	Encapsulation can be achieved by: Declaring all the variables in the class as private and writing public methods in the class to set and get the values of variables.
+
+	7.	Abstraction: Data Abstraction is the property by virtue of which only the essential details are displayed to the user. The trivial or the non-essentials units are not displayed to the user. Ex: A car is viewed as a car rather than its individual components.
+Data Abstraction may also be defined as the process of identifying only the required characteristics of an object ignoring the irrelevant details. The properties and behaviors of an object differentiate it from other objects of similar type and also help in classifying/grouping the objects.
+Consider a real-life example of a man driving a car. The man only knows that pressing the accelerators will increase the speed of car or applying brakes will stop the car but he does not know about how on pressing the accelerator the speed is actually increasing, he does not know about the inner mechanism of the car or the implementation of accelerator, brakes, etc in the car. This is what abstraction is.
+Q7) What is bioperl why bio PERL used in bio informatics give its advantages and disadvantages.
+
+
+￼
+
+
+BioPerl is a collection of Perl modules that facilitate the development of Perl scripts for bioinformatics applications. It has played an integral role in the Human Genome Project.
+
+Bioperl provides access to data stores such as GenBank and SwissProt via a flexible series of sequence input/output modules, and to the emerging common sequence data storage format of the Open Bioinformatics Database Access project.
+
+Why use in bioinformatics
+
+Bioperl provides an easy-to-use, stable, and consistent programming interface for bioinformatics application programmers. The Bioperl modules have been successfully and repeatedly used to reduce otherwise complex tasks to only a few lines of code.
+
+Perl makes it easy to process and manipulate long sequences such as DNA and proteins. Perl makes it convenient to write a program that controls one or more other programs. As a final example, Perl is used to put biology research labs, and their results, on their own dynamic web sites.
+
+Advantages:
+BioPerl was one of the first biological module repositories that increased its usability. It has very easy to install modules, along with a flexible global repository. BioPerl uses good test modules for a large variety of processes.
+
+Searching for similar sequences. Creating and manipulating sequence alignments. Searching for genes and other structures on genomic DNA. Developing machine readable sequence annotations.
+
+Disadvantages:
+
+There are many ways to use BioPerl, from simple scripting to very complex object programming. This makes the language not clear and sometimes hard to understand. For as many modules that BioPerl has, some do not always work the way they are intended.
+Q8) write short note on
+
+Explain function and useful functions
+
+	1.	BioSeq module:
+
+￼
+
+￼
+
+
+￼
+
+￼
+
+
+
+	2.	SeqIO:
+
+￼
+
+￼
+
+
+
+	3.	AlignIo:
+
+AlignIO is patterned on the object and its commands have many of the same names as the commands in . Just as in the object can be created with -file and -format
+
+Example:
+
+use Bio::AlignIO; my $io = Bio::AlignIO->new(
+- file => "receptors.aln",
+- format => "clustalw" );
+
+
+Bio::AlignIO reads many formats but does not write in every format (the same is true for Bio::SeqIO). AlignIO currently supports output in these formats:
+	•	fasta
+	•	mase
+	•	selex
+	•	clustalw
+	•	msf
+	•	phylip
+	•	po
+	•	stockholm
+	•	XMFA
+	•	metafasta
+
+Bio::AlignIO objects can be produced by bioperl-run alignment creation objects (e.g. Clustalw.pm, BLAST’s bl2seq, TCoffee.pm, and Lagan.pm or they can be read in from files of multiple-sequence alignments in various formats using AlignIO.
+
+Q6) write a short note on
+
+	1.	Inheritance:
+
+Inheritance: Inheritance is an important pillar of OOP(Object Oriented Programming). It is the mechanism in perl by which one class is allowed to inherit the features(fields and methods) of another class. Important terminology:
+	•	Super Class: The class whose features are inherited is known as superclass(or a base class or a parent class).
+	•	Sub Class: The class that inherits the other class is known as subclass(or a derived class, extended class, or child class). The subclass can add its own fields and methods in addition to the superclass fields and methods.
+	•	Reusability: Inheritance supports the concept of “reusability”, i.e. when we want to create a new class and there is already a class that includes some of the code that we want, we can derive our new class from the existing class. By doing this, we are reusing the fields and methods of the existing class.
+A class can be created in perl by using packages and can be inherited by using the ‘use’ keyword.
+
+
+
+
+	2.	Bioperl:
+
+
+￼
+
+
+BioPerl is a collection of Perl modules that facilitate the development of Perl scripts for bioinformatics applications. It has played an integral role in the Human Genome Project.
+
+Bioperl provides access to data stores such as GenBank and SwissProt via a flexible series of sequence input/output modules, and to the emerging common sequence data storage format of the Open Bioinformatics Database Access project.
+
+Perl in bioinformatics
+Perl makes it easy to process and manipulate long sequences such as DNA and proteins. Perl makes it convenient to write a program that controls one or more other programs. As a final example, Perl is used to put biology research labs, and their results, on their own dynamic web sites.
+
+

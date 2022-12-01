@@ -1,0 +1,614 @@
+Q1) what is perl write advantages and disadvantages
+
+-> Perl is a programming language developed by Larry Wall, especially designed for text processing. It stands for Practical Extraction and Report Language. It runs on a variety of platforms, such as Windows, Mac OS, and the various versions of UNIX.
+          Perl is a general-purpose programming language originally developed for text manipulation and now used for a wide range of tasks including system administration, web development, network programming, GUI development, and more.
+
+ADVANTAGES:
+   1. Perl contains the features of different languages like C, sed, awk, and sh etc. which makes the Perl more useful and productive. 
+System Administration: Due to having the different scripting languages capabilities Perl make the task of system administration very easy.
+
+  2. Perl Provides supports for cross platform and it is compatible with mark-up languages like HTML, XML etc.
+	•	It is very efficient in text-manipulation i.e. Regular Expression. It also provides the socket capability.
+	•	It is free and a Open Source software which is licensed under Artistic and GNU General Public License (GPL).
+	•	It is an embeddable language that’s why it can embed in web servers and database servers.
+	•	It supports more than 25, 000 open source modules on CPAN(Comprehensive Perl Archive Network) which provide many powerful extensions to the standard library. For example, XML processing, GUI(Graphical User Interface) and DI(Database Integration) etc.
+
+  Disadvantages of Perl:
+	•	Perl doesn’t supports portability due to CPAN modules.
+	•	Programs runs slowly and program needs to be interpreted each time when any changes are made.
+	•	In Perl, the same result can be achieved in several different ways which make the code untidy as well as unreadable.
+	•	Usability factor is lower when compared to other languages.
+
+
+Perl advantages:
+Its syntax is simple, which makes it easy to understand.
+It supports OOP concepts.
+Perl programs run easily on the system.
+It is more flexible to use.
+It supports all platforms and is much more portable.
+It has a rich set of Perl modules and free software.
+It is much more efficient to work on text and string manipulation as it is a scripting language.
+Perl combines features of many other languages which make it easy to understand.
+Perl disadvantages
+A Perl program containing CPAN modules will not run on another system which doesn't have CPAN modules installed.
+It is an interpretative language, so it is slower in comparison with other languages.
+It has untidy and unreadable codes.
+It starts creating problems when the code is larger than 200 lines.
+It is not portable.
+
+
+
+Why we learn perl
+	•	Perl is a stable, cross platform programming language.
+	•	Though Perl is not officially an acronym but few people used it as Practical Extraction and Report Language.
+	•	It is used for mission critical projects in the public and private sectors.
+	•	Perl is an Open Source software, licensed under its Artistic License, or the GNU General Public License (GPL).
+	•	Perl was created by Larry Wall.
+
+Features of perl
+	•	Perls database integration interface DBI supports third-party databases including Oracle, Sybase, Postgres, MySQL and others.
+	•	Perl works with HTML, XML, and other mark-up languages.
+	•	Perl supports Unicode.
+	•	Perl is Y2K compliant.
+	•	Perl supports both procedural and object-oriented programming.
+	•	Perl interfaces with external C/C++ libraries through XS or SWIG.
+	•	Perl is extensible. There are over 20,000 third party modules available from the Comprehensive Perl Archive Network (CPAN).
+	•	The Perl interpreter can be embedded into other systems.
+Example:
+# This will print "Hello, World"
+print "Hello, world\n";
+
+Applications of Perl
+
+	1.	Perl Is Best Suited For Text Manipulation
+	2.	Bioinformatics With BioPerl
+	3.	Use It For Scripting System Administration Tasks
+	4.	Using Perl For Text-To-Speech Translation
+	5.	Speech recognition is a complex, but increasingly important feature for a variety of applications from virtual assistants to chatbots. Here, too, Perl can help.
+	6.	Perl makes it easy to process and manipulate long sequences such as DNA and proteins. Perl makes it convenient to write a program that controls one or more other programs. As a final example, Perl is used to put biology research labs, and their results, on their own dynamic web sites. Perl does all this and more.
+
+Q2) Explain perl and it’s uses in bioinformatics
+
+
+-> Perl is a programming language developed by Larry Wall, especially designed for text processing. It stands for Practical Extraction and Report Language. It runs on a variety of platforms, such as Windows, Mac OS, and the various versions of UNIX.
+          Perl is a general-purpose programming language originally developed for text manipulation and now used for a wide range of tasks including system administration, web development, network programming, GUI development, and more.
+
+Perl uses in bioinformatics:
+
+In bioinformatics, a DNA sequence might be represented as an object inheriting from a more general implementation that covers the properties of all biological sequences. OOP would code this object by describing its properties such as length, checksum, and certainly the string of letters that comprises the sequence itself. Then one would implement accessor methods to retrieve or set these properties, and also more complex functions such as transcribe() that would take as an argument an organism-specific codon matrix and transform the DNA object to an RNA object.
+
+
+Q3) Explain Variable Types in detail
+
+
+      A variable is a place to store values. They can be manipulated throughout the program. When variables are created they reserve some memory space.
+
+Perl Variable Declaration
+     The equal sign (=) is used to assign values to variables. At the left of (=) is the variable name and on the right it is the value of the variable.
+Example:
+	1.	$name = "Anastasia";   
+	2.	$rank = "9th";  
+	3.	$marks = 756.5;  
+
+There are three types of variables:
+
+	•	 Scalar defined by $
+	•	Arrays defined by @
+	•	Hashes defined by %
+
+   The same variable can be used for all these three types of variables in a program. For example, $name, @name and %name, all three variables will be considered different in a program.
+
+	1.	Scalar Variable :
+                A scalar is a single unit of data. That data might be an integer number, floating point, a character, a string, a paragraph, or an entire web page. Simply saying it could be anything, but only a single thing.
+Example:
+    #!/usr/bin/perl
+
+$age = 25;             # An integer assignment
+$name = "John Paul";   # A string 
+$salary = 1445.50;     # A floating point
+
+print "Age = $age\n";
+print "Name = $name\n";
+print "Salary = $salary\n";
+
+Output:
+Age = 25
+Name = John Paul
+Salary = 1445.5
+
+	2.	Array Variable:
+                 An array is a variable that stores an ordered list of scalar values. Array variables are preceded by an "at" (@) sign. To refer to a single element of an array, you will use the dollar sign ($) with the variable name followed by the index of the element in square brackets.
+
+Example:
+    #!/usr/bin/perl
+
+@ages = (25, 30, 40);             
+@names = ("John Paul", "Lisa", "Kumar");
+
+print "\$ages[0] = $ages[0]\n";
+print "\$ages[1] = $ages[1]\n";
+print "\$ages[2] = $ages[2]\n";
+print "\$names[0] = $names[0]\n";
+print "\$names[1] = $names[1]\n";
+print "\$names[2] = $names[2]\n";
+
+
+Here we used escape sign (\) before the $ sign just to print it. Other Perl will understand it as a variable and will print its value. When executed, this will produce the following result −
+
+Output:
+$ages[0] = 25
+$ages[1] = 30
+$ages[2] = 40
+$names[0] = John Paul
+$names[1] = Lisa
+$names[2] = Kumar
+
+	3.	Hash Variable:
+                  A hash is a set of key/value pairs. Hash variables are preceded by a percent (%) sign. To refer to a single element of a hash, you will use the hash variable name followed by the "key" associated with the value in curly brackets.
+
+Example:
+
+#!/usr/bin/perl
+
+%data = ('John Paul', 45, 'Lisa', 30, 'Kumar', 40);
+
+print "\$data{'John Paul'} = $data{'John Paul'}\n";
+print "\$data{'Lisa'} = $data{'Lisa'}\n";
+print "\$data{'Kumar'} = $data{'Kumar'}\n";
+
+Output:
+$data{'John Paul'} = 45
+$data{'Lisa'} = 30
+$data{'Kumar'} = 40
+
+Q4) Difference between single and doubles quotes in perl
+
+Single Quote Strings
+In Perl, when a string has single quote, it means everything is treated as a literal mere text. Even if it is the name of a variable.
+Example:
+
+# Single Quote Strings
+
+$x = 5;
+$my_name = 'Include help $x';
+
+print $my_name;
+
+Output:
+Include help $x
+
+
+As you can see from the example above, the variable name $x has been displayed just by its name $x.
+
+
+Double Quote Strings
+Run the above example with double quotes and see the output.
+Example:
+
+# Double Quote Strings
+
+$x = 5;
+$my_name = "Include help $x";
+
+print $my_name;
+
+Output:
+Include help 5
+
+
+The difference between single and double-quotes is that double quotes insert variables and special characters such as newlines \n, whereas a single quote does not insert any variable or special character.
+
+Q5) what is Scalar Operator in perl elaborate on its type.
+
+There are following miscellaneous operators supported by Perl language. Assume variable a holds 10 and variable b holds 20 then −
+
+Sr.No.	Operator & Description
+1	.
+Binary operator dot (.) concatenates two strings.
+Example − If $a = "abc", $b = "def" then $a.$b will give "abcdef"
+2	x
+The repetition operator x returns a string consisting of the left operand repeated the number of times specified by the right operand.
+Example − ('-' x 3) will give ---.
+3	..
+The range operator .. returns a list of values counting (up by ones) from the left value to the right value
+Example − (2..5) will give (2, 3, 4, 5)
+4	++
+Auto Increment operator increases integer value by one
+Example − $a++ will give 11
+5	--
+Auto Decrement operator decreases integer value by one
+Example − $a-- will give 9
+6	->
+The arrow operator is mostly used in dereferencing a method or variable from an object or a class name
+Example − $obj->$a is an example to access variable $a from object $obj
+
+
+Example
+
+Try the following example to understand all the miscellaneous operators available in Perl. Copy and paste the following Perl program in test.pl file and execute this program.
+
+#!/usr/local/bin/perl
+
+$a = "abc";
+$b = "def";
+
+print "Value of \$a  = $a and value of \$b = $b\n";
+ 
+$c = $a . $b;
+print "Value of \$a . \$b = $c\n";
+
+$c = "-" x 3;
+print "Value of \"-\" x 3 = $c\n";
+
+@c = (2..5);
+print "Value of (2..5) = @c\n";
+
+$a = 10;
+$b = 15;
+print "Value of \$a  = $a and value of \$b = $b\n";
+
+$a++;
+$c = $a ;
+print "Value of \$a after \$a++ = $c\n";
+
+$b--;
+$c = $b ;
+print "Value of \$b after \$b-- = $c\n";
+
+
+When the above code is executed, it produces the following result −
+
+Output:
+
+Value of $a = abc and value of $b = def
+Value of $a . $b = abcdef
+Value of "-" x 3 = ---
+Value of (2..5) = 2 3 4 5
+Value of $a = 10 and value of $b = 15
+Value of $a after $a++ = 11
+Value of $b after $b-- = 14
+
+Q6) elaborate on conditional statement in Perl
+
+Perl conditional statements helps in the decision making, which require that the programmer specifies one or more conditions to be evaluated or tested by the program, along with a statement or statements to be executed if the condition is determined to be true, and optionally, other statements to be executed if the condition is determined to be false.
+Following is the general from of a typical decision making structure found in most of the programming languages −
+￼
+The number 0, the strings '0' and "" , the empty list () , and undef are all false in a boolean context and all other values are true. Negation of a true value by ! or not returns a special false value.
+Perl programming language provides the following types of conditional statements.
+
+
+Sr.No.	Statement & Description
+1	if statement
+An if statement consists of a boolean expression followed by one or more statements.  Syntax
+The syntax of an if statement in Perl programming language is −
+
+if(boolean_expression) {
+   # statement(s) will execute if the given condition is true
+}.                                                            If the boolean expression evaluates to true then the block of code inside the if statement will be executed. If boolean expression evaluates to false then the first set of code after the end of the if statement (after the closing curly brace) will be executed.                             Example: $a = 10;
+# check the boolean condition using if statement
+if( $a < 20 ) {
+   # if condition is true then print the following
+   printf "a is less than 20\n";
+}
+print "value of a is : $a\n";             
+2	if...else statement
+An if statement can be followed by an optional else statement.       
+3	if...elsif...else statement
+An if statement can be followed by an optional elsif statement and then by an optional else statement.
+4	unless statement
+An unless statement consists of a boolean expression followed by one or more statements.
+5	unless...else statement
+An unless statement can be followed by an optional else statement.
+6	unless...elsif..else statement
+An unless statement can be followed by an optional elsif statement and then by an optional else statement.
+7	switch statement
+With the latest versions of Perl, you can make use of the switch statement. which allows a simple way of comparing a variable value against various conditions
+
+
+
+Q7) What is an array List down operators used in array.
+
+A Perl array variable stores an ordered list of scalar values.
+To refer a single element of Perl array, variable name will be preceded with dollar ($) sign followed by index of element in the square bracket.
+
+Perl Simple Array Example
+This is a simple example to use Perl array.
+
+@num = (2015, 2016, 2017);               
+@string = ("One", "Two", "Three");  
+print "$num[0]\n";  
+print "$num[1]\n";  
+print "$num[2]\n";  
+print "$string[0]\n";  
+print "$string[1]\n";  
+print "$string[2]\n";  
+
+Output: 
+
+2015
+2016
+2017
+One
+Two
+Three
+
+
+Array Operators:
+
+1) Push on Array
+
+The push array function appends a new element at the end of the array.
+
+@array = ("pink", "red", "blue");  
+push @array, "orange";  
+print "@array\n";  
+
+Output: 
+pink red blue orange
+
+In the above program, "orange" element is added at the end of the array.
+
+2) Pop on Array
+The pop array function removes the last element from the array.
+
+@array = ("pink", "red", "blue");  
+pop @array;  
+print "@array\n";  
+
+Output:
+pink red 
+
+
+In the above program, "blue" element is removed from the end of the array.
+
+3) Shift on Array
+The shift array function removes the left most element of array and thus shorten the array by 1.
+
+@array = ("pink", "red", "blue");  
+shift @array;  
+print "@array\n";  
+
+Output:
+red blue
+
+In the above program, "pink" is removed from the array.
+
+4) Unshift on Array
+The unshift array function adds a new element at the start of the array.
+
+@array = ("pink", "red", "blue");  
+unshift @array, "orange";  
+print "@array\n";  
+
+Output:
+orange pink red blue 
+
+In the above program, "orange" is added at the start of the array.
+
+https://www.javatpoint.com/perl-array 
+
+
+
+
+
+
+
+
+Q8) what is an array and explain its advantages and disadvantages and its uses.
+
+An array is a variable that stores an ordered list of scalar values. Array variables are preceded by an "at" (@) sign. To refer to a single element of an array, you will use the dollar sign ($) with the variable name followed by the index of the element in square brackets.
+
+
+Here is a simple example of using the array variables
+
+Example:
+@ages = (25, 30, 40);             
+@names = ("John Paul", "Lisa", "Kumar");
+
+print "\$ages[0] = $ages[0]\n";
+print "\$ages[1] = $ages[1]\n";
+print "\$ages[2] = $ages[2]\n";
+print "\$names[0] = $names[0]\n";
+print "\$names[1] = $names[1]\n";
+print "\$names[2] = $names[2]\n";
+
+Here we have used the escape sign (\) before the $ sign just to print it. Other Perl will understand it as a variable and will print its value. When executed, this will produce the following result −
+
+Output :
+
+$ages[0] = 25
+$ages[1] = 30
+$ages[2] = 40
+$names[0] = John Paul
+$names[1] = Lisa
+$names[2] = Kumar
+
+
+
+Advantages of using Array in Perl
+Below are the advantages are as follows.
+	•	Multiple data items are accessed by using an array.
+	•	Using array we can save the memory.
+	•	Using an array in Perl debugging of code is easy.
+	•	It is efficient to declare array while defining a single element.
+	•	The array is used to help increase the reusability of code.
+
+
+Disadvantages of array:
+	•	The size of the array should be known in advance.
+	•	The array is a static data structure with a fixed size so, the size of the array cannot be modified further and hence no modification can be done during runtime.
+	•	Insertion and deletion operations are costly in arrays as elements are stored in contiguous memory.
+	•	If the size of the declared array is more than the required size then, it can lead to memory wastage. 
+
+Uses of array
+
+
+In Perl, array is a special type of variable. The array is used to store the list of values and each object of the list is termed as an element. Elements can either be a number, string, or any type of scalar data including another variable.
+
+
+
+Q9) What is an hash explain its literal representation of a hash
+
+The hashes is the most essential and influential part of the perl language. A hash is a group of key-value pairs. The keys are unique strings and values are scalar values.
+Hashes are declared using my keyword. The variable name starts with a (%) sign.
+Hashes are like arrays but there are two differences between them. First arrays are ordered but hashes are unordered. Second, hash elements are accessed using its value while array elements are accessed using its index value.
+No repeating keys are allowed in hashes which makes the key values unique inside a hash. Every key has its single value.
+
+
+A hash is a set of key/value pairs. Hash variables are preceded by a percent (%) sign. To refer to a single element of a hash, you will use the hash variable name preceded by a "$" sign and followed by the "key" associated with the value in curly brackets..
+Here is a simple example of using the hash variables −
+
+Example:
+
+%data = ('John Paul', 45, 'Lisa', 30, 'Kumar', 40);
+
+print "\$data{'John Paul'} = $data{'John Paul'}\n";
+print "\$data{'Lisa'} = $data{'Lisa'}\n";
+print "\$data{'Kumar'} = $data{'Kumar'}\n";
+
+This will produce the following result −
+
+Output:
+$data{'John Paul'} = 45
+$data{'Lisa'} = 30
+$data{'Kumar'} = 40
+
+
+Q10) elaborate on sub routine with the help of with and without para metres with suitable example
+
+Perl Functions and Subroutines
+Perl functions and subroutines are used to reuse a code in a program. You can use a function at several places in your application with different parameters.
+There is only one difference in function and subroutine, subroutine is created with sub keyword and it returns a value. You can divide your code into separate subroutines. Logically each function in each division should perform a specific task.
+Syntax of subroutine:
+
+sub subName{  
+body  
+}  
+
+In the following example, we are defining a subroutine function 'myOffice' and call it
+
+#defining function  
+sub myOffice{  
+   print "javaTpoint!\n";  
+}  
+# calling Function   
+myOffice();  
+
+Output:
+javaTpoint!
+
+
+
+Perl subroutine Function with Arguments
+You can pass any number of arguments inside a subroutine. Parameters are passed as a list in the special @_ list array variables. Hence, the first argument to the function will be $_[0], second will be $_[1] and so on
+
+You can pass various arguments to a subroutine like you do in any other programming language and they can be acessed inside the function using the special array @_. Thus the first argument to the function is in $_[0], the second is in $_[1], and so on.
+
+Example:
+
+# Function definition
+sub Average {
+   # get total number of arguments passed.
+   $n = scalar(@_);
+   $sum = 0;
+
+   foreach $item (@_) {
+      $sum += $item;
+   }
+   $average = $sum / $n;
+
+   print "Average for the given numbers : $average\n";
+}
+
+# Function call
+Average(10, 20, 30);
+
+Output:
+Average for the given numbers : 20
+
+
+Perl subroutine Function with without Arguments
+
+&marine; # style 2
+
+sub marine {
+    state $n = 0; # private, persistent variable $n
+    $n += 1;
+    print "Hello, sailor number $n!\n";
+}
+
+Q11) What do you mean by reference and DeReference in perl explain its features along with suitable example ?
+
+References
+In Perl, we use variables to access data stored in a memory location(all data and functions are stored in memory). Variables are assigned with data values which are used in various operations. Perl Reference is a way to access the same data but with a different variable. A reference in Perl is a scalar data type which holds the location of another variable. Another variable can be scalar, hashes, arrays, function name etc. Nested data structure can be created easily as a user can create a list which contains the references to another list that can further contain the references to arrays, scalar or hashes etc.
+
+Example:
+
+# Scalar Value Reference
+
+# defining scalar
+$scalar_val = 1234;
+ 
+# making reference of scalar variable
+$reference_scalar = \$scalar_val; 
+
+
+Features
+
+	•	A reference to an anonymous hash can be created using the curly brackets {} around the key and value pairs.
+
+Example:
+# creating reference to anonymous hash
+$ref_to_anonymous_hash = {'GFG' => '1', 'Geeks' => '2'};
+
+
+	•	A reference to an anonymous array can be created using the square brackets [].
+
+Example:
+# creating reference to an anonymous array
+$ref_to_anonymous_array = [20, 30, ['G', 'F', 'G']];
+
+
+Dereferencing
+
+Now, after we have made the reference, we need to use it to access the value. Dereferencing is the way of accessing the value in the memory pointed by the reference. In order to dereference, we use the prefix $, @, % or & depending on the type of the variable(a reference can point to a array, scalar, or hash etc).
+
+Example:
+
+# Dereferencing of a Scalar 
+  
+# defining a scalar 
+$scalar = 1234; 
+
+  
+# creating an reference to scalar variable  
+$reference_scalar = \$scalar;  
+
+  
+# Dereferencing 
+# printing the value stored  
+# at $reference_scalar by prefixing  
+# $ as it is a Scalar reference 
+print $$reference_scalar;   
+
+Output:
+
+1234
+
+
+
+Q12) Elaborate on controlled statement used in perl
+
+Loop control statements change the execution from its normal sequence. When execution leaves a scope, all automatic objects that were created in that scope are destroyed.
+Perl supports the following control statements. Click the following links to check their detail.
+Sr.No.	Control Statement & Description
+1	next statement
+It causes the loop to skip the remainder of its body and immediately retest its condition prior to reiterating.
+2	last statement
+Terminates the loop statement and transfers execution to the statement immediately following the loop.
+3	continue statement
+A continue BLOCK, it is always executed just before the conditional is about to be evaluated again.
+4	redo statement
+The redo command restarts the loop block without evaluating the conditional again. The continue block, if any, is not executed.
+5	goto statement
+Perl supports a goto command with three forms: goto label, goto expr, and goto &name

@@ -1,7 +1,0 @@
-Motherboard	: MSI A320M PROVD PLUS
-Processor  	: Ryzen 3 1300x (3.5GHz)
-Ram			: 16GB (2666 MHZ) (Kingston + Samsung) DDR4
-Storage		: 120GB SSD Kingston + 1TB HDD Seagate + DVD write/read
-Graphics	: Asus GTX 1050TI (4GB vram GDDR5| 1400 MHz | 768 Cude cores)
-PSU			: Circle 600w 80PLUS bronze
-Monitor		: HP 22kd (1080p 60Hz | VGA + DVI)

@@ -1,0 +1,3 @@
+use Package;
+
+Package::hello();
